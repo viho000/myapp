@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://ruby.taobao.org/'
 
 gem 'rails', '3.2.18'
 
@@ -36,3 +37,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+# https://github.com/slim-template/slim
+gem 'slim'
+
+# https://github.com/slim-template/slim-rails
+gem 'slim-rails'

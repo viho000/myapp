@@ -1,0 +1,20 @@
+doctype html
+  html
+    head
+      title
+        = full_title(yleld(:title))
+      = stylesheet_link_tag "application",madia:"all","data-turbolinks-track" => true
+      = javascript_include_tag "application","data-turbolinks-track" => true
+      = csrf_meta_tags
+    body
+      header.navbar.navbar-fixed-top.navbar-inverse
+        .navbar-inner
+          .container
+            = link_to "first_app",'#' id:"log"
+            nav.pull-right
+              ul
+                li = link_to "home",'#'
+                li = link_to "help",'#'
+                li = link_to "Sign in",'#'
+      .container
+        = yield
